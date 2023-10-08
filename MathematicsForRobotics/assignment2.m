@@ -56,17 +56,17 @@ v = [21, 15, 12, 10]; %given velocities at corresponding time
 
 syms t
 
-p1 = (t-1)*(t-3)*(t-4)*21/((-1*-3*-4));
-p1 = expand(p1);
+p1 = (t-1)*(t-3)*(t-4)*21/((-1*-3*-4))
+p1 = expand(p1)
 
-p2 = (t-0)*(t-3)*(t-4)*15/((1*(1-3)*(1-4)));
-p2 = expand(p2);
+p2 = (t-0)*(t-3)*(t-4)*15/((1*(1-3)*(1-4)))
+p2 = expand(p2)
 
-p3 = (t-0)*(t-1)*(t-4)*12/(((3-0)*(3-1)*(3-4)));
-p3 = expand(p3);
+p3 = (t-0)*(t-1)*(t-4)*12/(((3-0)*(3-1)*(3-4)))
+p3 = expand(p3)
 
-p4 = (t-0)*(t-1)*(t-3)*10/(((4-0)*(4-1)*(4-3)));
-p4 = expand(p4);
+p4 = (t-0)*(t-1)*(t-3)*10/(((4-0)*(4-1)*(4-3)))
+p4 = expand(p4)
 
 v_t = p1+p2+p3+p4
 x_t = int(v_t,t)
@@ -184,5 +184,9 @@ plot(8,y_8, 'ok')
 plot(13,2028,'^g')
 legend('x(y)','Given points','y(8)','(13, 2028)', Location='northwest')
 %NB: generated .eps figure in other script
+
+
+
+
 
 
